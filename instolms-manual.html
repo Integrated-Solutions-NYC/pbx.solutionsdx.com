@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>IntSol SIP Client Manual - Integrated Solutions</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">Integrated Solutions</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">IntSol SIP Client Manual</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">IntSol SIP Client Manual</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>IntSol SIP Client Manual</h2>
+        <p>IntSol SIP Client is a branded custom build of <a href='https://www.microsip.org'>MicroSIP</a></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+
+
+        <div class="Help LH">
+
+          <h2>General</h2>
+          Softphone usage modes:
+          <ul>
+            <li>Single call mode - single window, basic functionality. Enabled by default.</li>
+            <li>Extended mode - two windows, multiple calls, conferences, attended transfers.</li>
+          </ul>
+          Communication types:
+          <ul>
+            <li>Calls through SIP server / PBX - select "Add Account" after installing.</li>
+            <li>Direct calls by IP address (or domain name). Works out of the box, using the "Local Account".</li>
+          </ul>
+          <p>After automatic startup or when you close the main window MicroSIP will be minimized to the system tray.
+          </p>
+
+          <p>MicroSIP does not require the installation of additional libraries, runtimes or frameworks.</p>
+
+          <div>
+            <h2>Dialpad</h2>
+            <img src="assets/img/intsolms/intsol-1.png" alt="screenshot Main" style="float: left; margin: 5px 45px 45px 5px;">
+            Mainly used for dialing or sending dual tones (DTMF). Various input formats are supported.<br>
+            Example: 1-800-567-46-57, 1234, 1234@sip.server.com, 1234@sip.server.com:5043, 192.168.0.55.<br>
+            Or even complete SIP URI with optional microsip extensions:<br>
+            "Name" &lt;sip:extension@sip.microsip.org;parameter1=xxx?Custom-Header=yyy&gt;,dtmf_sequence
+            <p>There is sound quality indication:</p>
+            <img src="assets/img/intsolms/sound-quality.png" style="float: left; margin: 5px 45px 45px 5px;">
+            <p>Control switches and buttons:
+            <p>
+            <ul>
+              <li>DND (switch) - Do not disturb mode</li>
+              <li>FWD (switch) - Automatic forwarding of incoming calls. Set up in the settings</li>
+              <li>AC (switch) - Automatic conference for incoming calls after answering a call</li>
+              <li>AA (switch) - Automatic answer. Set up in the settings</li>
+              <li>CONF (button) - Invite a participant to a conference call</li>
+              <li>REC (button) - Current call recording. Set up in the settings</li>
+            </ul>
+          </div>
+          <div style="clear: both;"></div>
+          <div class="Clear"></div>
+          
+          <h2>Contacts</h2>
+          <img src="assets/img/intsolms/intsol-2.png" alt="screenshot Contacts" style="float: left; margin: 5px 45px 45px 5px;">
+          <p>To add a contact, right-click in an empty area of the Contacts page.
+            Only the Number field is required and it is unique in the list.
+            Number can be specifind in various input formats, see above.</p>
+          <p>You can enable Presence Subscription to see contact availability status, use BLF functionality and pickup
+            calls. This may require additional configuration of your SIP server. For some types of servers (not
+            Asterisk), you must enable "Publish Presence" in the "Account" window to share your availability status for
+            other contacts. After successfully setting up the presence, the entries in your contacts will turn colored.
+          </p>
+          <p>When a contact receives an incoming call, its icon will blink.
+            To answer the incoming call (directed call pickup), double click on it or use the context
+            menu item - "Call Pickup".</p>
+          <p>
+            Pickup code is hardcoded: "**". For example, to configure call pickup for Asterisk, add to
+            extensions.conf:<br>
+            exten => _**.,1,Pickup(${EXTEN:2})
+          </p>
+          <div style="clear: both;"></div>
+          <div class="Clear"></div>
+
+          <h2>Messages</h2>
+          <img src="assets/img/intsolms/intsol-4.png" alt="screenshot Messages" style="float: left; margin: 5px 45px 45px 5px;"><br />
+          Allows you to manage multiple calls, make conferences, blind and attended transfers, send and receive
+          messages.<br />
+          Currently, most of these features are only available in Extended mode.
+          <div style="clear: both;"></div>
+          <div class="Clear"></div>
+
+          <h2>Account</h2>
+          <img src="assets/img/intsolms/intsol-8.png" alt="screenshot Account" style="float: left; margin: 5px 45px 45px 5px;"><br />
+          <ul>
+            <li><a name="sipServer"></a><b>SIP server</b><br /> Your account SIP
+              server.</li>
+            <li><a name="sipProxy"></a><b>SIP proxy</b><br /> Your account SIP
+              proxy or a chain of proxies. Examples: 192.168.1.1, 192.168.1.1:5070, 192.168.1.1 192.168.15.1,
+              192.168.1.1;hide, ";hide" parameter can solve impossibility of
+              registration or calls due to server configuration.</li>
+            <li><a name="username"></a><b>Username</b><br /> Your account
+              username.</li>
+            <li><a name="domain"></a><b>Domain</b><br /> Your account domain.</li>
+            <li><a name="login"></a><b>Login</b><br /> Username for
+              authentication. If empty, will be used Username.</li>
+            <li><a name="password"></a><b>Password</b><br /> Your account
+              password.</li>
+            <li><a name="name"></a><b>Display name</b><br /> Your name, remote
+              party will see it in incoming calls and messages.</li>
+            <li><a name="dialingPrefix"></a><b>Dialing Prefix</b><br /> International
+              calling prefix for numbers in local format (must begin with "+" or "00");
+              or a simple prefix for each dialing phone number.</li>
+            <li><a name="dialPlan"></a><b>Dial Plan</b><br />
+              Transforms dialing number according to pattern. Numbers that do not match any patterns are blocked.
+              Patterns are separated by a pipe symbol: |. The entire value can be enclosed in brackets ().
+              <table>
+                <tr>
+                  <td>x</td>
+                  <td>"x" represents any character</td>
+                </tr>
+                <tr valign="top">
+                  <td>[sequence]</td>
+                  <td>Enter characters within square brackets to create a list of accepted digits.<br>
+                    Numeric range: enter [2-9] to allow the user to enter any one digit from 2 through 9.<br>
+                    Numeric range with other characters: enter [16-9*] to allow the user to enter 1, 6, 7, 8, 9, or
+                    *.<br>
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td>&lt;dialed:substituted&gt;</td>
+                  <td>Replaces one sequence with another. Or inserts some sequence inside a number: <:substituted><br>
+                      Example 1 : <8:1555>xxxxxxx<br>
+                        If user dials 81234567, the system transmits 15551234567.<br>
+                        Example 2 : <:1>xxxxxxxxxx<br>
+                          If user dials 1234567890, the system transmits 11234567890.<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>. (period symbol)</td>
+                  <td>Represents zero or more entries of the previous digit. Example, 01. => 0, 01, 011, 0111, ...; x.
+                    => matches any dialed number.</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <br>
+                    Example: Replace + with 00, allow any other numbers.
+                    <div class="Code">
+                      <+:00>x.|x.
+                    </div>
+                    Complex rule example:
+                    <div class="Code">
+                      [3469]11|0|00|1[2-9]xx[2-9]xxxxxx|<:1>[2-9]xx[2-9]xxxxxx|<:1618>[2-9]xxxxxx|<:1618555>6[2-4]xx
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </li>
+            <li><a name="hideCID"></a><b>Hide Caller ID</b><br /> Your PBX must allow this feature. Otherwise, you
+              probably won't be able to call. For FritzBox, clear this check box and change Display Name to "Anonymous".
+            </li>
+            <li><a name="voicemail"></a><b>Voicemail Number</b><br /> Voicemail
+              access number. If empty, microsip will try to determine it
+              automatically.</li>
+            <li><a name="encryption"></a><b>Media encryption</b> (<a href="#remarkFragmentation">remark 1</a>)<br />
+              Disabled - never use
+              encryption, Optional - use encryption when remote party supports
+              encryption, Mandatory - use encryption always. Recommend value:
+              Optional.</li>
+            <li><a name="transport"></a><b>Transport</b><br /> The value depends on the configuration of your SIP
+              server. Failsafe value: UDP. Best value: TLS. TCP is good, but is may not work with your router/NAT due to
+              SIP ALG enabled.
+              "UDP+TCP" is a mix of UDP (for small request) and TCP (for large).</li>
+            <li><a name="publicAddress"></a><b>Public address</b><br /> Can be used to solve call flow and media
+              delivery issues when you don't have dedicated public IP address. You can manually specify IP address or
+              hostname for Via, Contact and SDP.
+              It can point to one of the interface address OR it can point to the public
+              address of a NAT router where port mappings have been configured.
+              For automatic public address detection and rewrite you can use Allow IP rewrite
+              feature or use STUN server.</li>
+            <li><a name="localPort"></a><b>Local port</b><br /> By default
+              MicroSIP tries to listen on standard SIP port - 5060. If port is busy
+              by other application, MicroSIP will listen on random port. You can
+              manualy change port to any.</li>
+            <li><a name="publishPresence"></a><b>Publish presence</b><br /> Sends
+              on SIP server publish query, it means that other subscribed contacts
+              can see your status and can pickup your incoming calls (BLF
+              functionality). Besides, often you must specify which contacts have
+              right to see your presence information - you can done this for
+              example via SIP provider webpage. Your SIP server must support this
+              feature.</li>
+            <li><a name="ice"></a><b>ICE</b> (<a href="#remarkFragmentation">remark
+                1</a>)<br /> Helps to find shortest way for media streams and reduce media latency. It is
+              usefull when possible direct P2P connection without SIP provider
+              mediagate. Enabling ICE can cause problems with in media delivery if SIP server configured incorrecly.
+            </li>
+            <li><a name="allowRewrite"></a><b>Allow IP rewrite</b><br /> Can be used to solve call flow and media
+              delivery issues when you don't have dedicated public IP address. If enabled, MicroSIP will keep track of
+              the public IP address
+              from the response of REGISTER request. Public IP will be used in
+              later SIP queries in Via, Contact and SDP.<br>
+              See also: Public address, STUN.</li>
+            <li><a name="sessionTimers"></a><b>Disable Session Timers</b><br />Specify
+              the usage of Session Timers. Try to disable Session Timers if your
+              calls dropps after XX minutes. Recommended value: unchecked.</li>
+          </ul>
+
+          <div style="clear: both;"></div>
+          <div class="Clear"></div>
+          <h2>Settings</h2>
+          <img src="assets/img/intsolms/intsol-7.png" alt="screenshot Settings"><br />
+          <ul>
+            <li><a name="singleMode"></a><b>Single call mode</b><br /> Provides a simple user interface with limited
+              functionality. You must disable this if you wish to manage multiple calls, make attended transfers or
+              conference calls.</li>
+            <li><a name="ringtone"></a><b>Ringtone</b><br /> You can
+              choose any WAV file on incoming call.</li>
+            <li><a name="microphoneAmplification"></a><b>Microphone Amplification</b><br /> Extends range of input
+              signal level regulation by adding software amplification on top half of regulator. Default value - no.
+            </li>
+            <li><a name="softwareLevelAdjustment"></a><b>Software Level Adjustment</b><br /> Enables internal input
+              level regulation instead of changing global level of input device. Note that hardware regulation has lower
+              noise rating. Default value - no.</li>
+            <li><a name="audioCodecs"></a><b>Audio Codecs</b> (<a href="#remarkFragmentation">remark 1</a>)<br /> You
+              can enable and
+              disable codecs by moving it between lists. Also you can set codec
+              priority (for outgoing calls) by moving codecs in right list.</li>
+            <li><a name="vad"></a><a name="disableVAD"></a><b>VAD</b><br />
+              Enables voice activity detection. Default value - no.</li>
+            <li><a name="ec"></a><b>EC</b><br /> Enable echo cancellation.
+              Default value - no.</li>
+            <li><a name="forceCodec"></a><b>Force codec for incoming</b><br />
+              Normally, caller defines codecs priority. For incoming calls this
+              option allows you (callee) select prefered codec.</li>
+            <li><a name="disableH264"></a><b>Disable H.264 codec</b><br />
+              Normally caller defines codec that will be used by both parties. But
+              some callees parties forces your selected codec with some other, but
+              in same time they supports your codec. In this case you can disable
+              unwanted codec. Default value - no.</li>
+            <li><a name="disableH263"></a><b>Disable H.263 codec</b><br /> See
+              above. Default value - no.
+
+            <li><a name="bitrate"></a><b>Video codec bitrate</b><br /> Set the
+              maximum bitrate. If one party set 256 kbit/s and other 512 kbit/s -
+              will be used 256 kbit/s for both. Dynamic scenes requires higher
+              bitrates (~512 kbit/s), otherwise picture quality will fall down.</li>
+            <li><a name="DTMFMethod"></a><b>DTMF Method</b><br /> Auto: MicroSIP
+              will use RFC2833 for DTMF relay by default but will switch to in-band
+              audio DTMF tones if the remote side does not indicate support of
+              RFC2833 in SDP. Note: in-band method will not work properly with
+              every audio codec due to compression algorithms.</li>
+            <li><a name="autoAnswer"></a><b>Auto Answer</b><br /> MicroSIP will
+              play short tone and popup when call auto accepted. SIP header - when
+              receiving the "Call-Info: Auto Answer" or "Call-Info: answer-after=0"
+              or "X-AUTOANSWER: TRUE" in SIP header. Options:
+              Delay - delay before auto answer.
+              Caller Number - one or more numbers separated with ; or | and with wildcards allowed * ? ^ (^ indicates an
+              optional character).
+            </li>
+            <li><a name="forwarding"></a><b>Call Forwarding</b><br /> Automatic forwarding of incoming calls.
+            </li>
+            <li><a name="featureCodes"></a><b>Feature Codes</b><br /> Call transfer using a feature code instead of the
+              standard SIP call transfer. You can also make an attended call transfer in single call mode with it. Your
+              PBX must be configured to use this feature.
+            </li>
+            <li><a name="denyIncoming"></a><b>Deny incoming</b><br /> Helps to
+              block unwanted or spam incoming calls. Different
+              user/domain/user-domain means that callee data do not match data in
+              your account window. Different remote domain means that caller domain
+              do not match domain in your account window.</li>
+            <li><a name="directory"></a><b>Directory of users</b><br /> Enter URL to obtain contacts from external
+              source via HTTP(s). JSON and XML responses are supported. Use UTF-8 encoding.
+              <p>JSON format (recommended):</p>
+              <p>Test URL: https://www.microsip.org/contacts-sample.json</p>
+              <div class="Code"><br />
+                {&quot;refresh&quot;: 0, &quot;items&quot;: [<br />
+                {&quot;number&quot;: &quot;&quot;, &quot;name&quot;: &quot;&quot;, &quot;firstname&quot;: &quot;&quot;,
+                &quot;lastname&quot;: &quot;&quot;, &quot;phone&quot;: &quot;&quot;, &quot;mobile&quot;: &quot;&quot;,
+                &quot;email&quot;: &quot;&quot;, &quot;address&quot;: &quot;&quot;, &quot;city&quot;: &quot;&quot;,
+                &quot;state&quot;: &quot;&quot;, &quot;zip&quot;: &quot;&quot;, &quot;comment&quot;: &quot;&quot;,
+                &quot;presence&quot;: 0, &quot;starred&quot;: 0, &quot;info&quot;: &quot;&quot;}<br />
+                ]} </div>
+              <p>The incremental GET parameter "sequence" is automatically added to the URL.
+              <p>If you do not use standard SIP presence, the JSON response may include presence data or carry only
+                presence data:</p>
+              <div class="Code"><br />
+                {&quot;refresh&quot;: 3,<br />
+                &quot;presence&quot;: [<br />
+                {&quot;number&quot;: &quot;001&quot;, &quot;status&quot;: &quot;online&quot;, &quot;info&quot;:
+                &quot;Online&quot;},{&quot;number&quot;: &quot;002&quot;, &quot;status&quot;: &quot;offline&quot;,
+                &quot;info&quot;: &quot;Offline&quot;},{&quot;number&quot;: &quot;003&quot;, &quot;status&quot;:
+                &quot;away&quot;, &quot;info&quot;: &quot;Away&quot;},{&quot;number&quot;: &quot;004&quot;,
+                &quot;status&quot;: &quot;busy&quot;, &quot;info&quot;: &quot;Busy&quot;},{&quot;number&quot;:
+                &quot;005&quot;, &quot;status&quot;: &quot;ring&quot;, &quot;info&quot;:
+                &quot;Ring&quot;},{&quot;number&quot;: &quot;006&quot;, &quot;status&quot;: &quot;phone&quot;,
+                &quot;info&quot;: &quot;On the phone&quot;}]<br />
+                } </div>
+              <p>XML format:</p>
+              <p>Test URL: https://www.microsip.org/contacts-sample.xml</p>
+              <div class="Code">&lt;?xml version=&quot;1.0&quot;?&gt;<br />
+                &lt;contacts refresh=&quot;0&quot;&gt;<br />
+                &lt;contact name=&quot;&quot; number=&quot;&quot; firstname=&quot;&quot; lastname=&quot;&quot;
+                phone=&quot;&quot; mobile=&quot;&quot; email=&quot;&quot; address=&quot;&quot; city=&quot;&quot;
+                state=&quot;&quot; zip=&quot;&quot; comment=&quot;&quot; presence=&quot;0&quot; starred=&quot;0&quot;
+                info=&quot;&quot;/&gt;<br />
+                &lt;/contacts&gt;<br />
+              </div>
+              Also
+              supported Cisco IP phone directory format <a
+                href="http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cuipph/all_models/xsi/7_0/english/programming/guide/70xsi/xsi70xml.html"
+                target="_blank">CiscoIPPhoneDirectory</a>, Yealink and some other - just try yours.<br />
+              <p>To change the frequency of automatic refresh
+                use "refresh" property or HTTP header "Cache-Control: max-age=3600",
+                where 3600 - value in seconds. If zero or not specified will be used default value 3600 seconds.</p>
+            </li>
+            <li><a name="stunServer"></a><b>STUN server</b><br /> Helps to make
+              direct way for media streams without SIP provider media gate when NAT
+              used. It open UDP ports on NAT server for incoming connections.
+              Exists different NAT types (full cone NAT, (address) restricted cone
+              NAT, port restricted cone NAT and symmetric NAT). You can use STUN
+              only if your NAT is not symmetric! Otherwise you will have problems -
+              you can not hear and can not hears you - remove it from settings.
+              Default value - empty.<br /> <br /> <img src="assets/img/intsolms/stun.png" width="600" height="300"
+                alt="how works STUN">
+              <div class="Clear"></div>
+            </li>
+            <li><a name="handleMediaButtons"></a><b>Handle Media Buttons</b><br /> Enables handling of media keys or
+              buttons events on multimedia keyboards or headsets with buttons (WM_APPCOMMAND message). Can be used for
+              call answer, hold, resume and end call.</li>
+            <li><a name="headset"></a><b>Headset Support</b><br /> Enables HID-compatible headset button event
+              processing and LED indication. Can be used to answer, hold, resume, and end a call by pressing a button on
+              a USB or Bluetooth headset (Jabra, Plantronics, etc). You should not install headset manufacturer software
+              as it may interfere with the standard headset interface.</li>
+            <li><a name="soundEvents"></a><b>Sound events</b><br /> Playback key
+              presses and signals of outgoing call.</li>
+            <li><a name="enableLocal"></a><b>Enable local account</b><br /> Local
+              account allows you make and receive calls without SIP server and SIP
+              account. In this case you can call by IP address (or domain name) as
+              number.<br>Note: local account always enabled if SIP account is not
+              configured or disabled.<br>Example: sip:192.168.1.21 or just
+              192.168.1.21 or username@192.168.1.21.</li>
+            <li><a name="log"></a><b>Enable log file</b><br /> Activates microsip
+              log file. Used for debugging. To open log file right click on tray
+              icon.</li>
+            <li id="randomAnswerBox"><b>Random position of the answer box</b><br />
+              Display incoming call window at random position on the screen and
+              random monitor if many.</li>
+            <li id="crashReport"><b>Send crash report</b><br /> Automatically send
+              crash report to the microsip team for analyse. Report includes OS
+              name and version, log file (if enabled in Settings). It never
+              contains your passwords.</li>
+          </ul>
+
+          <div class="Clear"></div>
+          <h2>Settings not included in Settings dialog</h2>
+          <i>You need to modify microsip.ini manually.</i><br />
+          <ul>
+            <li>"cmdCallStart" - runs specified command when connection
+              established. Caller ID passed as parameter.</li>
+            <li>"cmdCallEnd" - runs specified command when call ended. Caller ID
+              passed as parameter.</li>
+            <li>"cmdIncomingCall" - runs specified command when incoming call
+              arrives. Caller ID passed as parameter.</li>
+            <li>"cmdCallAnswer" - runs specified command when user answers on
+              incoming call. Caller ID passed as parameter.</li>
+            <li>"autoHangUpTime" - automatically end a call after a specified number of seconds.</li>
+            <li>"maxConcurrentCalls" - reject incoming calls if limit reached.</li>
+            <li>"noResize" - prevent resizing of the main window.</li>
+            <li>"userAgent" - use a custom User-Agent value of outgoing SIP
+              requests.</li>
+            <li>"multiMonitor" - allow multiple monitor mode.</li>
+          </ul>
+          Port knocker feature. Send sequential UDP requests to a specified ports
+          on a specific host (SIP server by default) before microsip tries the
+          SIP registration. That allows SIP server to whitelist cliend IP in the
+          firewall.
+          <ul>
+            <li>"portKnockerHost=host.com" - domain name or IP address of knocking
+              host. If empty and port list isn't empty - SIP server value will be
+              used.</li>
+            <li>"portKnockerPorts=1111,2222" - one or more ports separated by
+              comma. If empty - feature disabled.</li>
+          </ul>
+          <div class="Clear"></div>
+          <h2>Shortcuts</h2>
+          <ul>
+            <li><a name="toggle"></a><b>Toggle</b><br /> Shortcut button becomes toggle. When turning on, the first
+              number is called, when turning off, the second.</li>
+            <li><a name="BLF"></a><b>BLF</b><br /> Enable subscription and presence indicator, as it implemented for
+              contacts.</li>
+          </ul>
+          <div class="Clear"></div>
+          <h2>DTMF</h2>
+          While you are in call you can press buttons on dialpad to send DTMF
+          signals. If you want automatically pass DTMF commands just after call
+          established, then add ",dtmf_sequence" or ",dtmf_sequence1,dtmf_sequence2" in calling number. One comma means
+          pause in one second.
+
+          <div class="Clear"></div>
+          <h2>Video</h2>
+          Supported H.264 and H.263+ (other name H.263-1998) video codecs.
+          Default codec - H.264, video format - 640x480 @ 30 fps, outgoing
+          bitrate 512 kbit/s. H.264 encoding requires significant CPU resourse.
+          Recommended dual core processor, multimedia extensions like MMX will be
+          used if is present.<br /> Video capture and video rendering uses
+          DirectX and Direct3D (with hardware acceleration).<br /> Because
+          hardware acceleration is used, video calls will not work with remote
+          desktop session (RDP).<br /> If you have serious problems with
+          performance:<br /> - update video adapter drivers<br /> -
+          install/reinstall DirectX<br />
+
+          <div class="Clear"></div>
+          <h2>Command line</h2>
+          Call a number: microsip.exe number<br />
+          Hang up all calls: microsip.exe /hangupall<br />
+          Hang up all incoming: microsip.exe /hangupincoming<br />
+          Hang up all calling: microsip.exe /hangupcalling<br />
+          Answer a call: microsip.exe /answer<br />
+          Call transfer: microsip.exe /transfer:XXX<br />
+          Send DTMF: microsip.exe /dtmf:12345<br />
+          Start minimized: microsip.exe /minimized<br />
+          Reset configuration and delete all data: microsip.exe /reset<br />
+          Reset configuration and delete all data (without confirmation): microsip.exe /resetnoask <br />
+          Exit: microsip.exe /exit
+          <div class="Clear"></div>
+
+
+          <h2>Hotkeys</h2>
+          <p>The phone's main window must be active.</p>
+          F2 - answer a call<br />
+          F4 - terminate all calls<br />
+
+          <div class="Clear"></div>
+
+
+          <h2>Remarks</h2>
+          <ul>
+            <li><a name="remarkFragmentation"></a><b>Remark 1</b><br /> This
+              feature increases an UDP packet size (SDP message length of INVITE
+              query). If UDP packet size will be > 1500 bytes (MTU), it will be
+              fragmented. Not all routers can correctly work with fragmented UDP
+              packets. So, if you enable extra feature like SRTP, or ICE, or select
+              too many enabled codecs, or make video call, be ready that you will
+              not be able make a call. Possible solutions: use a TCP or TLS transport,
+              but in this case your SIP server must support it. Please note that TCP may not work with SIP ALG enabled
+              on your router.
+            </li>
+          </ul>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"><img src="assets/img/logo.png" alt="">Integrated Solutions</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Prospect Heights</p>
+            <p>Brooklyn, NY 11225</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 516 399 5464</span></p>
+            <p><strong>Email:</strong> <span>info@solutionsdx.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Jump to section</h4>
+          <ul>
+            <li><a href="index.html#">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="https://axbmi4khc6.execute-api.us-east-2.amazonaws.com/submit-form" method="post"
+            class="php-email-form">
+            <div class="newsletter-form">
+              <input label="email" type="email" name="email" required />
+              <input type="submit" value="Subscribe" />
+              <input type="hidden" name="name" value="" />
+              <input type="hidden" name="subject" value="Newsletter Subscription" />
+              <input type="hidden" name="message" value="Please subscribe me to the newsletter." />
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span><strong class="px-1 sitename">📞 Integrated Solutions</strong><span>All Rights
+          Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

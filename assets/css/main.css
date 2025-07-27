@@ -1947,3 +1947,10 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# skip past header when navigating anchors
+--------------------------------------------------------------*/
+a {
+  scroll-margin-top: 100px;
+}
