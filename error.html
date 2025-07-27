@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 – Integrated Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #0b1a2e 0%, #050d1a 100%);
+      color: #e0e6ed;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+    }
+    .logo img {
+      width: 140px;
+      margin-bottom: 2rem;
+    }
+    .code {
+      font-size: 6rem;
+      font-weight: 700;
+      color: #28c5d4;
+    }
+    .message {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    .subtext {
+      color: #92a2b3;
+      font-size: 1rem;
+      max-width: 480px;
+      margin-top: 0.5rem;
+    }
+    .home-link {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #28c5d4;
+      color: #0b1a2e;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .home-link:hover {
+      background-color: #1ba6ba;
+    }
+
+    .waves {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 120px;
+      z-index: -1;
+    }
+
+    svg {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .wave path {
+      animation: waveMotion 6s ease-in-out infinite;
+    }
+
+    @keyframes waveMotion {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-30px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="/assets/img/logo-light.png" alt="Integrated Solutions Logo" />
+  </div>
+  <div class="code">404</div>
+  <div class="message">The signal didn’t reach shore.</div>
+  <div class="subtext">Looks like this page drifted off-course. Let’s guide you back where the reception’s strong.</div>
+  <a href="/" class="home-link">Return to homepage</a>
+
+  <div class="waves">
+    <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,40 C300,80 900,0 1200,40 L1200,120 L0,120 Z" fill="#28c5d4" fill-opacity="0.05"></path>
+    </svg>
+  </div>
+</body>
+</html>
