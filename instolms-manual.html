@@ -79,7 +79,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>IntSol SIP Client Manual</h2>
-        <p>IntSol SIP Client is a branded custom build of <a href='https://www.microsip.org'>MicroSIP</a></p>
+        <p>IntSol SIP Client is a branded custom build of <a href='https://pbx.solutionsdx.com'>MicroSIP</a></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
@@ -98,18 +98,18 @@
             <li>Calls through SIP server / PBX - select "Add Account" after installing.</li>
             <li>Direct calls by IP address (or domain name). Works out of the box, using the "Local Account".</li>
           </ul>
-          <p>After automatic startup or when you close the main window MicroSIP will be minimized to the system tray.
+          <p>After automatic startup or when you close the main window IntSol will be minimized to the system tray.
           </p>
 
-          <p>MicroSIP does not require the installation of additional libraries, runtimes or frameworks.</p>
+          <p>IntSol does not require the installation of additional libraries, runtimes or frameworks.</p>
 
           <div>
             <h2>Dialpad</h2>
             <img src="assets/img/intsolms/intsol-1.png" alt="screenshot Main" style="float: left; margin: 5px 45px 45px 5px;">
             Mainly used for dialing or sending dual tones (DTMF). Various input formats are supported.<br>
             Example: 1-800-567-46-57, 1234, 1234@sip.server.com, 1234@sip.server.com:5043, 192.168.0.55.<br>
-            Or even complete SIP URI with optional microsip extensions:<br>
-            "Name" &lt;sip:extension@sip.microsip.org;parameter1=xxx?Custom-Header=yyy&gt;,dtmf_sequence
+            Or even complete SIP URI with optional IntSol extensions:<br>
+            "Name" &lt;sip:extension@sip.solutionsdx.com;parameter1=xxx?Custom-Header=yyy&gt;,dtmf_sequence
             <p>There is sound quality indication:</p>
             <img src="assets/img/intsolms/sound-quality.png" style="float: left; margin: 5px 45px 45px 5px;">
             <p>Control switches and buttons:
@@ -225,7 +225,7 @@
               probably won't be able to call. For FritzBox, clear this check box and change Display Name to "Anonymous".
             </li>
             <li><a name="voicemail"></a><b>Voicemail Number</b><br /> Voicemail
-              access number. If empty, microsip will try to determine it
+              access number. If empty, IntSol will try to determine it
               automatically.</li>
             <li><a name="encryption"></a><b>Media encryption</b> (<a href="#remarkFragmentation">remark 1</a>)<br />
               Disabled - never use
@@ -244,8 +244,8 @@
               For automatic public address detection and rewrite you can use Allow IP rewrite
               feature or use STUN server.</li>
             <li><a name="localPort"></a><b>Local port</b><br /> By default
-              MicroSIP tries to listen on standard SIP port - 5060. If port is busy
-              by other application, MicroSIP will listen on random port. You can
+              IntSol tries to listen on standard SIP port - 5060. If port is busy
+              by other application, IntSol will listen on random port. You can
               manualy change port to any.</li>
             <li><a name="publishPresence"></a><b>Publish presence</b><br /> Sends
               on SIP server publish query, it means that other subscribed contacts
@@ -260,7 +260,7 @@
               mediagate. Enabling ICE can cause problems with in media delivery if SIP server configured incorrecly.
             </li>
             <li><a name="allowRewrite"></a><b>Allow IP rewrite</b><br /> Can be used to solve call flow and media
-              delivery issues when you don't have dedicated public IP address. If enabled, MicroSIP will keep track of
+              delivery issues when you don't have dedicated public IP address. If enabled, IntSol will keep track of
               the public IP address
               from the response of REGISTER request. Public IP will be used in
               later SIP queries in Via, Contact and SDP.<br>
@@ -309,12 +309,12 @@
               maximum bitrate. If one party set 256 kbit/s and other 512 kbit/s -
               will be used 256 kbit/s for both. Dynamic scenes requires higher
               bitrates (~512 kbit/s), otherwise picture quality will fall down.</li>
-            <li><a name="DTMFMethod"></a><b>DTMF Method</b><br /> Auto: MicroSIP
+            <li><a name="DTMFMethod"></a><b>DTMF Method</b><br /> Auto: IntSol
               will use RFC2833 for DTMF relay by default but will switch to in-band
               audio DTMF tones if the remote side does not indicate support of
               RFC2833 in SDP. Note: in-band method will not work properly with
               every audio codec due to compression algorithms.</li>
-            <li><a name="autoAnswer"></a><b>Auto Answer</b><br /> MicroSIP will
+            <li><a name="autoAnswer"></a><b>Auto Answer</b><br /> IntSol will
               play short tone and popup when call auto accepted. SIP header - when
               receiving the "Call-Info: Auto Answer" or "Call-Info: answer-after=0"
               or "X-AUTOANSWER: TRUE" in SIP header. Options:
@@ -336,7 +336,7 @@
             <li><a name="directory"></a><b>Directory of users</b><br /> Enter URL to obtain contacts from external
               source via HTTP(s). JSON and XML responses are supported. Use UTF-8 encoding.
               <p>JSON format (recommended):</p>
-              <p>Test URL: https://www.microsip.org/contacts-sample.json</p>
+              <p>Test URL: https://pbx.solutionsdx.com/contacts-sample.json</p>
               <div class="Code"><br />
                 {&quot;refresh&quot;: 0, &quot;items&quot;: [<br />
                 {&quot;number&quot;: &quot;&quot;, &quot;name&quot;: &quot;&quot;, &quot;firstname&quot;: &quot;&quot;,
@@ -361,7 +361,7 @@
                 &quot;info&quot;: &quot;On the phone&quot;}]<br />
                 } </div>
               <p>XML format:</p>
-              <p>Test URL: https://www.microsip.org/contacts-sample.xml</p>
+              <p>Test URL: https://pbx.solutionsdx.com/contacts-sample.xml</p>
               <div class="Code">&lt;?xml version=&quot;1.0&quot;?&gt;<br />
                 &lt;contacts refresh=&quot;0&quot;&gt;<br />
                 &lt;contact name=&quot;&quot; number=&quot;&quot; firstname=&quot;&quot; lastname=&quot;&quot;
@@ -404,21 +404,21 @@
               number.<br>Note: local account always enabled if SIP account is not
               configured or disabled.<br>Example: sip:192.168.1.21 or just
               192.168.1.21 or username@192.168.1.21.</li>
-            <li><a name="log"></a><b>Enable log file</b><br /> Activates microsip
+            <li><a name="log"></a><b>Enable log file</b><br /> Activates IntSol
               log file. Used for debugging. To open log file right click on tray
               icon.</li>
             <li id="randomAnswerBox"><b>Random position of the answer box</b><br />
               Display incoming call window at random position on the screen and
               random monitor if many.</li>
             <li id="crashReport"><b>Send crash report</b><br /> Automatically send
-              crash report to the microsip team for analyse. Report includes OS
+              crash report to the IntSol team for analyse. Report includes OS
               name and version, log file (if enabled in Settings). It never
               contains your passwords.</li>
           </ul>
 
           <div class="Clear"></div>
           <h2>Settings not included in Settings dialog</h2>
-          <i>You need to modify microsip.ini manually.</i><br />
+          <i>You need to modify IntSol.ini manually.</i><br />
           <ul>
             <li>"cmdCallStart" - runs specified command when connection
               established. Caller ID passed as parameter.</li>
@@ -436,7 +436,7 @@
             <li>"multiMonitor" - allow multiple monitor mode.</li>
           </ul>
           Port knocker feature. Send sequential UDP requests to a specified ports
-          on a specific host (SIP server by default) before microsip tries the
+          on a specific host (SIP server by default) before IntSol tries the
           SIP registration. That allows SIP server to whitelist cliend IP in the
           firewall.
           <ul>
@@ -476,17 +476,17 @@
 
           <div class="Clear"></div>
           <h2>Command line</h2>
-          Call a number: microsip.exe number<br />
-          Hang up all calls: microsip.exe /hangupall<br />
-          Hang up all incoming: microsip.exe /hangupincoming<br />
-          Hang up all calling: microsip.exe /hangupcalling<br />
-          Answer a call: microsip.exe /answer<br />
-          Call transfer: microsip.exe /transfer:XXX<br />
-          Send DTMF: microsip.exe /dtmf:12345<br />
-          Start minimized: microsip.exe /minimized<br />
-          Reset configuration and delete all data: microsip.exe /reset<br />
-          Reset configuration and delete all data (without confirmation): microsip.exe /resetnoask <br />
-          Exit: microsip.exe /exit
+          Call a number: IntSol.exe number<br />
+          Hang up all calls: IntSol.exe /hangupall<br />
+          Hang up all incoming: IntSol.exe /hangupincoming<br />
+          Hang up all calling: IntSol.exe /hangupcalling<br />
+          Answer a call: IntSol.exe /answer<br />
+          Call transfer: IntSol.exe /transfer:XXX<br />
+          Send DTMF: IntSol.exe /dtmf:12345<br />
+          Start minimized: IntSol.exe /minimized<br />
+          Reset configuration and delete all data: IntSol.exe /reset<br />
+          Reset configuration and delete all data (without confirmation): IntSol.exe /resetnoask <br />
+          Exit: IntSol.exe /exit
           <div class="Clear"></div>
 
 
